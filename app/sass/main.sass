@@ -1,0 +1,170 @@
+@import "libs"
+@import "vars"
+
+*
+	margin: 0px
+	padding: 0px
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+h1, h2, h3, h4, h5, h5
+	padding: 5px 0px
+h1
+	font-size: 2.2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.4em
+h4
+	font-size: 1.1em
+
+p
+	padding: 5px 0px
+
+a
+	color: #34495e
+
+ul,li
+	list-style: none
+
+.box
+	display: block
+	padding: 20px
+	margin: 20px 0px
+	border: 1px solid #333
+	padding-top: 15px
+
+// table
+table, td, th 
+  border: 1px solid #ddd
+  text-align: left
+
+table
+  border-collapse: collapse
+  width: 100%
+ 	margin: 30px 0px
+
+th, td
+  padding: 15px
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.80
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background: #1E2933
+	color: #404040
+	color: #353535
+	text-align: justify
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+header
+	background: #2C394B
+	display: flex
+	justify-content: center
+	height: 55px
+	box-shadow: 0 0 3px #111
+
+nav
+	width: 1100px
+	display: flex
+	justify-content: space-between
+
+.header_menu
+	display: inline-flex
+	list-style: none
+
+.header_menu_link
+	color: #fff
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 0.84em
+	line-height: 55px
+	display: flex
+	padding-right: 20px
+	padding-left: 20px
+	opacity: 1
+	&:hover
+		opacity: 0.87
+		background: darken(#2C394B, 50%)
+		height: 55px
+
+.icon
+	line-height: 55px
+	padding-right: 10px
+	font-size: 15px
+
+.icon_first
+	font-size: 17px
+	position: relative
+	bottom: 1px
+
+// content
+.content
+	max-width: 880px
+	margin: 40px auto
+	background: #fff
+	padding: 40px
+	box-shadow: 0 0 10px #111
+
+// menu
+.padd
+	margin-top: 10px
+.menu
+	color: #676767
+	font-size: 0.85em
+	text-decoration: none
+.menu_padd
+	padding: 0px 30px
+.bold
+	font-weight: 700
+
+.end	
+	width: 100%
+	border-top: 1px solid #000
+
+// footer
+footer
+	max-width: 208px
+	margin: 0px auto
+	margin-top: 20px
+	margin-bottom: -15px
+	font-size: 0.90em
+	color: #555
+
+.center
+	display: flex
+	justify-content: center
+
+@import "media" // Всегда в конце
